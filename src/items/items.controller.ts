@@ -37,7 +37,7 @@ export class ItemsController {
   async findAll(): Promise<object> {
     try {
       const data = await this.itemsService.findAll();
-      
+
       return {
         success: true,
         data,
